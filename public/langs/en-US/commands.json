@@ -1,0 +1,97 @@
+{
+    "config": {
+        "components": {
+            "menu_config": {
+                "1": {
+                    "label": "Economy",
+                    "description": "Configure the local economy system"
+                }
+            },
+            "menu_config_economia": {
+                "1": {
+                    "label": "Logs",
+                    "description": "Configure the channel for each of the logs."
+                }
+            },
+            "config_logs_menu": {
+                "1": {
+                    "label": "Action Changes",
+                    "description": "Configure the log channel to receive updates on actions."
+                },
+                "2": {
+                    "label": "Local Raffle Results",
+                    "description": "Configure the log channel to receive updates on local raffles."
+                }
+            }
+        },
+        "reply": {
+            "1": "**({{load}}) Use the menu below to select the type of configuration.**",
+            "2": "**(<:coin:1264589815609819199>) Select below what you want to configure.**",
+            "3": {
+                "content": "**({{load}}) Select in the menu below the type of log you want to configure**",
+                "embed": "<:growth:1264591751168004146> | **Action Logs:** {{logsAções}}\n<:awardcup:1264588967240532008> | **Local Raffle Logs:** {{logsRifas}}"
+            },
+            "4": {
+                "content": {
+                    "1": "**({{load}}) Select the channel in the menu below.**",
+                    "2": "**({{certo}}) Channel {{canal}} successfully configured.**"
+                },
+                "embed": "<:growth:1264591751168004146> | **Action Logs:** {{logsAções}}\n<:awardcup:1264588967240532008> | **Local Raffle Logs:** {{logsRifas}}"
+            }
+        }
+    },
+    "language": {
+        "reply": {
+            "1": {
+                "content": "**({{load}}) Select below the type of exchange you want to make**",
+                "components": [
+                    {
+                        "type": 1,
+                        "components": [
+                            {
+                                "label": "Personal",
+                                "custom_id": "personal",
+                                "style": 2,
+                                "type": 2
+                            },
+                            {
+                                "label": "Server",
+                                "custom_id": "server",
+                                "style": 2,
+                                "type": 2
+                            }
+                        ]
+                    }
+                ]
+            },
+            "2": {
+                "content": "**({{load}}) Select which language you want to switch to**",
+                "components": [
+                    {
+                        "type": 1,
+                        "components": [
+                            {
+                                "label": "Português",
+                                "custom_id": "pt-BR",
+                                "style": 2,
+                                "type": 2,
+                                "emoji": "<:portugal:1263624618309058613>"
+                            },
+                            {
+                                "label": "English",
+                                "custom_id": "en-US",
+                                "style": 2,
+                                "type": 2,
+                                "emoji": "<:england:1263624710604980326>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "3": "**({{certo}}) Language successfully changed to `English`**"
+        },
+        "errors": {
+            "missingPermissions": "**({{errado}}) You do not have permission to manage the server!**"
+        }
+    }
+}

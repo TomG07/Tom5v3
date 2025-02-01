@@ -1,0 +1,25 @@
+{
+    "botPerms": "**({{errado}}) I don't have sufficient permissions! [`{{perm}}`]**",
+    "cooldown": "**({{errado}}) You are on cooldown. Please wait...**",
+    "devOnly": "**({{errado}}) Only my developers can use this command**",
+    "userPerms": "**({{errado}}) You don't have sufficient permissions! [`{{perm}}`]**",
+    "basicPerms": "**(:x:) Missing basic permissions! [`UseExternalEmojis`, `EmbedLinks`]**",
+    "notExists": "**({{errado}}) The command `{{comando}}` does not exist**",
+    "error": "**({{errado}}) An error occurred while executing this command**",
+    "commandReparing": "**({{errado}}) This command is under repair**",
+    "message": {
+        "clientMention": {
+            "reply": {
+                "content": "**>>> (<:tom5_icons_wave:1014591822057713674>) Hello <@{{author}}>, do you need help?\n(<:tom5_icons_store:1119638418423566356>) My prefix is `{{prefix}}` or `/`\n(<:tom5_icons_info:1119648642488356907>) Help command: </help:1259923083154821254>\n(<:tom5_icons_question:1013546739170558135>) More information at </botinfo:1260253799663140955>**",
+                "buttons": {
+                    "0": {
+                        "label": "Add me!"
+                    },
+                    "1": {
+                        "label": "Programming & Support Community"
+                    }
+                }
+            }
+        }
+    }
+}

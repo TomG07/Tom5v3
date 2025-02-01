@@ -1,0 +1,97 @@
+{
+    "config": {
+        "components": {
+            "menu_config": {
+                "1": {
+                    "label": "Economia",
+                    "description":"Configure o sistema de economia local"
+                }
+            },
+            "menu_config_economia": {
+                "1": {
+                    "label": "Logs",
+                    "description": "Configure o canal para cada uma das logs."
+                }
+            },
+            "config_logs_menu": {
+                "1": {
+                    "label": "Alterações nas Ações",
+                    "description": "Configure o canal de logs para receber atualizações das ações."
+                },
+                "2": {
+                    "label": "Resultados das Rifas Locais",
+                    "description": "Configure o canal de logs para receber atualizações das rifas locais.."
+                }
+            }
+        },
+        "reply": {
+            "1": "**({{load}}) Use o menu abaixo para selecionar o tipo de configuração.**",
+            "2": "**(<:coin:1264589815609819199>) Selecione abaixo o que deseja configurar.**",
+            "3": {
+                "content": "**({{load}}) Selecione no menu abaixo o tipo de log que deseja configurar**",
+                "embed": "<:growth:1264591751168004146> | **Logs Ações:** {{logsAções}\n<:awardcup:1264588967240532008> | **Logs Rifas Locais:** {{logsRifas}}"
+            },
+            "4": {
+                "content": {
+                    "1": "**({{load}}) Selecione no menu abaico o canal.**",
+                    "2": "**({{certo}}) Canal {{canal}} configurado com sucesso.**"
+                },
+                "embed": "<:growth:1264591751168004146> | **Logs Ações:** {{logsAções}\n<:awardcup:1264588967240532008> | **Logs Rifas Locais:** {{logsRifas}}"
+            }
+        }
+    },
+    "language": {
+        "reply": {
+            "1": {
+                "content": "**({{load}}) Selecione abaixo o tipo de troca que deseja fazer**",
+                "components": [
+                    {
+                        "type": 1,
+                        "components": [
+                            {
+                                "label": "Pessoal",
+                                "custom_id": "pessoal",
+                                "style": 2,
+                                "type": 2
+                            },
+                            {
+                                "label": "Servidor",
+                                "custom_id": "servidor",
+                                "style": 2,
+                                "type": 2
+                            }
+                        ]
+                    }
+                ]
+            },
+            "2": {
+                "content": "**({{load}}) Selecione para que lingua deseja trocar**",
+                "components": [
+                    {
+                        "type": 1,
+                        "components": [
+                            {
+                                "label": "Português",
+                                "custom_id": "pt-BR",
+                                "style": 2,
+                                "type": 2,
+                                "emoji": "<:portugal:1263624618309058613>"
+                            },
+                            {
+                                "label": "English",
+                                "custom_id": "en-US",
+                                "style": 2,
+                                "type": 2,
+                                "emoji": "<:england:1263624710604980326>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "3": "**({{certo}}) Idioma alterado com sucesso para `Português`**"
+        },
+        "errors": {
+            "missingPermissions": "**({{errado}}) Não tens permissão para gerenciar o servidor!**"
+        }
+    }
+}
